@@ -39,6 +39,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: $font-size-standard;
+  font-family: $family;
+  font-weight: $weight-light;
 
   .container-main {
     display: flex;
@@ -52,7 +55,20 @@ main {
       height: 230px;
       justify-content: space-between;
       #info {
-        width: 430px;
+        width: 450px;
+
+        #heading {
+          font-weight: $weight-heavy;
+          color: $very-dark-magenta;
+          font-size: 45px;
+          padding-bottom: 10px;
+        }
+
+        #sub-heading {
+          color: $dark-grayish-magenta;
+          line-height: 1.5em;
+          word-spacing: 0.01em;
+        }
       }
 
       #rating-section {
