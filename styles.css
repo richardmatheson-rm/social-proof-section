@@ -29,6 +29,12 @@ main {
   background-position: left top, right bottom;
 }
 
+@media screen and (max-width: 375px) {
+  main {
+    background-position: center top, center bottom;
+  }
+}
+
 main .container-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +50,16 @@ main .container-main {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 375px) {
+  main .container-main {
+    height: 1350px;
+    width: 330px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 main .container-main .container-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,8 +70,24 @@ main .container-main .container-top {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 375px) {
+  main .container-main .container-top {
+    height: 530px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .container-main .container-top #info {
   width: 450px;
+}
+
+@media screen and (max-width: 375px) {
+  main .container-main .container-top #info {
+    width: 330px;
+  }
 }
 
 main .container-main .container-top #info #heading {
@@ -65,10 +97,38 @@ main .container-main .container-top #info #heading {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 375px) {
+  main .container-main .container-top #info #heading {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+main .container-main .container-top #info #heading .review-card:nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .container-main .container-top #info #heading .review-card:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 main .container-main .container-top #info #sub-heading {
   color: #937b92;
   line-height: 1.5em;
   word-spacing: 0.01em;
+}
+
+@media screen and (max-width: 375px) {
+  main .container-main .container-top #info #sub-heading {
+    text-align: center;
+    word-spacing: normal;
+    font-size: 14px;
+    line-height: 1.7em;
+  }
 }
 
 main .container-main .container-top #rating-section {
@@ -83,6 +143,13 @@ main .container-main .container-top #rating-section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 545px;
+}
+
+@media screen and (max-width: 375px) {
+  main .container-main .container-top #rating-section {
+    width: 330px;
+    height: 270px;
+  }
 }
 
 main .container-main .container-top #rating-section .rating {
@@ -100,20 +167,35 @@ main .container-main .container-top #rating-section .rating {
   font-weight: 700;
 }
 
+@media screen and (max-width: 375px) {
+  main .container-main .container-top #rating-section .rating {
+    width: 330px;
+    height: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 main .container-main .container-top #rating-section .rating .star-icons {
   padding-left: 25px;
   padding-right: 25px;
 }
 
-main .container-main .container-top #rating-section .rating:nth-child(2) {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-main .container-main .container-top #rating-section .rating:nth-child(3) {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+@media screen and (min-width: 375px) {
+  main .container-main .container-top #rating-section .rating:nth-child(2) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .container-main .container-top #rating-section .rating:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 main .container-main .container-bot {
@@ -124,6 +206,16 @@ main .container-main .container-bot {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 375px) {
+  main .container-main .container-bot {
+    height: 780px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 main .container-main .container-bot .review-card {
@@ -143,6 +235,13 @@ main .container-main .container-bot .review-card {
   border-radius: 10px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  main .container-main .container-bot .review-card {
+    height: 250px;
+    width: 330px;
+  }
 }
 
 main .container-main .container-bot .review-card .review-profile {
@@ -180,14 +279,15 @@ main .container-main .container-bot .review-card .review-text {
   line-height: 22px;
 }
 
-main .container-main .container-bot .review-card:nth-child(2) {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-main .container-main .container-bot .review-card:nth-child(3) {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+@media screen and (min-width: 375px) {
+  main .container-main .container-bot .review-card:nth-child(2) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .container-main .container-bot .review-card:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -46,6 +46,9 @@ main {
     url(/images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  @media screen and (max-width: $mobile-width) {
+    background-position: center top, center bottom;
+  }
 
   .container-main {
     display: flex;
@@ -54,24 +57,57 @@ main {
     flex-direction: column;
     justify-content: space-between;
 
+    @media screen and (max-width: $mobile-width) {
+      height: 1350px;
+      width: 330px;
+      align-items: center;
+    }
+
     .container-top {
       display: flex;
       height: 230px;
       justify-content: space-between;
+      @media screen and (max-width: $mobile-width) {
+        height: 530px;
+        // width: 330px;
+        flex-direction: column;
+      }
       #info {
         width: 450px;
+        @media screen and (max-width: $mobile-width) {
+          width: 330px;
+        }
 
         #heading {
           font-weight: $weight-heavy;
           color: $very-dark-magenta;
           font-size: 45px;
           padding-bottom: 10px;
+          @media screen and (max-width: $mobile-width) {
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 15px;
+          }
+
+          .review-card:nth-child(2) {
+            align-self: center;
+          }
+
+          .review-card:nth-child(3) {
+            align-self: flex-end;
+          }
         }
 
         #sub-heading {
           color: $dark-grayish-magenta;
           line-height: 1.5em;
           word-spacing: 0.01em;
+          @media screen and (max-width: $mobile-width) {
+            text-align: center;
+            word-spacing: normal;
+            font-size: 14px;
+            line-height: 1.7em;
+          }
         }
       }
 
@@ -80,6 +116,10 @@ main {
         flex-direction: column;
         justify-content: space-between;
         width: 545px;
+        @media screen and (max-width: $mobile-width) {
+          width: 330px;
+          height: 270px;
+        }
 
         .rating {
           display: flex;
@@ -91,18 +131,27 @@ main {
           color: $very-dark-magenta;
           font-weight: $weight-heavy;
 
+          @media screen and (max-width: $mobile-width) {
+            width: 330px;
+            height: 80px;
+            flex-direction: column;
+            justify-content: space-evenly;
+          }
+
           .star-icons {
             padding-left: 25px;
             padding-right: 25px;
           }
         }
 
-        .rating:nth-child(2) {
-          align-self: center;
-        }
+        @media screen and (min-width: $mobile-width) {
+          .rating:nth-child(2) {
+            align-self: center;
+          }
 
-        .rating:nth-child(3) {
-          align-self: flex-end;
+          .rating:nth-child(3) {
+            align-self: flex-end;
+          }
         }
       }
     }
@@ -111,6 +160,10 @@ main {
       display: flex;
       height: 265px;
       justify-content: space-between;
+      @media screen and (max-width: $mobile-width) {
+        height: 780px;
+        flex-direction: column;
+      }
 
       .review-card {
         height: 235px;
@@ -123,6 +176,10 @@ main {
         // padding: 30px 35px 45px 30px;
         padding-left: 30px;
         padding-right: 30px;
+        @media screen and (max-width: $mobile-width) {
+          height: 250px;
+          width: 330px;
+        }
 
         .review-profile {
           display: flex;
@@ -156,12 +213,14 @@ main {
         }
       }
 
-      .review-card:nth-child(2) {
-        align-self: center;
-      }
+      @media screen and (min-width: $mobile-width) {
+        .review-card:nth-child(2) {
+          align-self: center;
+        }
 
-      .review-card:nth-child(3) {
-        align-self: flex-end;
+        .review-card:nth-child(3) {
+          align-self: flex-end;
+        }
       }
     }
   }
