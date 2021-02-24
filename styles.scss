@@ -74,7 +74,32 @@ main {
       #rating-section {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 545px;
+
+        .rating {
+          display: flex;
+          align-items: center;
+          width: 450px;
+          height: 60px;
+          background-color: $light-grayish-magenta;
+          border-radius: 8px;
+          color: $very-dark-magenta;
+          font-weight: $weight-heavy;
+
+          .star-icons {
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+        }
+
+        .rating:nth-child(2) {
+          align-self: center;
+        }
+
+        .rating:nth-child(3) {
+          align-self: flex-end;
+        }
       }
     }
 

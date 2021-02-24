@@ -76,7 +76,41 @@ main .container-main .container-top #rating-section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 545px;
+}
+
+main .container-main .container-top #rating-section .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+  height: 60px;
+  background-color: #f7f2f7;
+  border-radius: 8px;
+  color: #502050;
+  font-weight: 700;
+}
+
+main .container-main .container-top #rating-section .rating .star-icons {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+main .container-main .container-top #rating-section .rating:nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .container-main .container-top #rating-section .rating:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 main .container-main .container-bot {
