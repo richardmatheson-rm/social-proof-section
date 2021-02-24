@@ -6,7 +6,75 @@
 }
 
 html,
-body {
+body,
+main {
   height: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 575px;
+  width: 1115px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container-main .container-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 230px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container-main .container-top #info {
+  width: 430px;
+}
+
+main .container-main .container-top #rating-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 545px;
+}
+
+main .container-main .container-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 265px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container-main .container-bot .review-card {
+  height: 235px;
+  width: 350px;
 }
 /*# sourceMappingURL=styles.css.map */
