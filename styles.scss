@@ -111,6 +111,52 @@ main {
       .review-card {
         height: 235px;
         width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $very-dark-magenta;
+        border-radius: 10px;
+        // padding: 30px 35px 45px 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .review-profile {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 50px;
+            border-radius: 50%;
+          }
+
+          div {
+            padding-left: 20px;
+
+            .username {
+              color: $white;
+              font-weight: $weight-medium;
+            }
+
+            .buyer-id {
+              color: $soft-pink;
+            }
+          }
+        }
+
+        .review-text {
+          color: $light-grayish-magenta;
+          font-weight: $weight-light;
+          font-size: 13px;
+          line-height: 22px;
+        }
+      }
+
+      .review-card:nth-child(2) {
+        align-self: center;
+      }
+
+      .review-card:nth-child(3) {
+        align-self: flex-end;
       }
     }
   }
